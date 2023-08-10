@@ -308,17 +308,17 @@ namespace ResistorCalculatedApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ImageForm imageForm = new ImageForm(); // İkinci formun örneği oluşturuluyor
+            ImageForm imageForm = new ImageForm(); 
             imageForm.ShowDialog();
         }
         private void DisplayImage()
         {
             PictureBox pictureBox = new PictureBox();
-            pictureBox.Image = Image.FromFile("resim.png"); // Resim dosyasının yolu
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom; // Resmi PictureBox boyutuna sığdır
-            pictureBox.Dock = DockStyle.Fill; // PictureBox'i formun içine sığdır
+            pictureBox.Image = Image.FromFile("resim.png"); 
+            pictureBox.SizeMode = PictureBoxSizeMode.Zoom; 
+            pictureBox.Dock = DockStyle.Fill; 
 
-            Controls.Add(pictureBox); // PictureBox'i forma eklemek
+            Controls.Add(pictureBox); 
         }
     }
 }
